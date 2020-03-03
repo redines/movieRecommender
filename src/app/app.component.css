@@ -1,5 +1,4 @@
-.movie {
-    border-color: var(--main-bg-color);
-    border-style: dashed;
-}
 
+.movieList {
+    border: 1px solid black;
+}

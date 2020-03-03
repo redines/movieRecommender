@@ -1,0 +1,4 @@
+.movie {
+    border-color: var(--main-bg-color);
+    border-style: dashed;
+}
