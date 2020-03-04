@@ -1,4 +1,12 @@
-.movie {
-    border-color: var(--main-bg-color);
-    border-style: dashed;
+.movie-card {
+    background-color: var(--card-bg-color);
+    border-style: solid;
+    border-color: gray;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 5px;
+}
+
+.movie-info{
+    border-top: solid;
+    padding: 5px;
 }

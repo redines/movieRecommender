@@ -4,13 +4,15 @@
 
 /*CSS colors*/
 :root {
-    --main-bg-color: grey;
-    --main-txt-color: blue;
+    --main-bg-color: #222;
+    --main-txt-color:#e6e6e6;
+    --card-bg-color: #444444;
 }
-
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
 }
