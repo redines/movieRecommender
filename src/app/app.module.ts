@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { FooterComponent } from './footer/footer.component';
+import { MovieServiceService } from './services/movie-service.service';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,10 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [MovieServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
