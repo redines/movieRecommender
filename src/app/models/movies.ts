@@ -1,5 +1,5 @@
 export interface Movies {
-    Name: String,
-    Date: String,
-    year: Number,
+    title: string,
+    budget: Number,
+    release_date: string
 }

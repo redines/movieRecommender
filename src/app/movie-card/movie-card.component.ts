@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieServiceService } from '../services/movie-service.service';
+import { TmdbAPIService } from '../../services/tmdb-api.service';
 
 @Component({
   selector: 'app-movie-card',
@@ -8,13 +8,17 @@ import { MovieServiceService } from '../services/movie-service.service';
 })
 export class MovieCardComponent implements OnInit {
 
-  public movieDate = {};
+  public image: string = "https://image.tmdb.org/t/p/w500/pCUdYAaarKqY2AAUtV6xXYO8UGY.jpg";
+  public title: string;
 
-  constructor(private MovieService: MovieServiceService) { }
+  constructor(private MovieService: TmdbAPIService) { }
 
   ngOnInit(): void {
 
-    this.MovieService.getMovie().subscribe(data => console.log(data.Date));
+    this.MovieService.getMovies().subscribe(data => console.log(data.budget));
+    this.MovieService.getMovies().subscribe(data => this.title = data.title);
+    this.MovieService.getMovies().subscribe(data => console.log(data.release_date));
+    this.MovieService.getImage().subscribe(data => this.image = data.image);
 
   }
 

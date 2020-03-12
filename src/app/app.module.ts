@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { FooterComponent } from './footer/footer.component';
-import { MovieServiceService } from './services/movie-service.service';
+import { TmdbAPIService } from '../services/tmdb-api.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { MovieServiceService } from './services/movie-service.service';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [MovieServiceService],
+  providers: [TmdbAPIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
