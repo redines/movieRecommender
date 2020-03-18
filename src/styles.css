@@ -4,9 +4,9 @@
 
 /*CSS colors*/
 :root {
-    --main-bg-color: #222;
+    --main-bg-color: rgb(133, 132, 132);
     --main-txt-color:#e6e6e6;
-    --card-bg-color: #444444;
+    --card-bg-color: #000;;
 }
 
 body {

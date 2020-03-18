@@ -1,12 +1,25 @@
 .movie-card {
     background-color: var(--card-bg-color);
-    border-style: solid;
-    border-color: gray;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.541);
     margin: 5px;
+    width: 300px;
+    overflow: hidden;
 }
 
 .movie-info{
-    border-top: solid;
     padding: 5px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.reco-button {
+    background-color: #f81f32;
+    padding: 15px 32px;
+    border:none;
+    margin: 0, auto;
+    color:#fefefe;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
 }
