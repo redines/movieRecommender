@@ -5,14 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
-import { FooterComponent } from './footer/footer.component';
 import { TmdbAPIService } from '../services/tmdb-api.service';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieCardComponent,
-    FooterComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
